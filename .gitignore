@@ -1,6 +1,6 @@
 .DS_Store
 compute_canada/**/*.rds
-
+*.rds
 
 # History files
 .Rhistory
@@ -64,4 +64,3 @@ output/heavy/
 
 # html
 *.html
-
