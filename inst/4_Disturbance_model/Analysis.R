@@ -7,9 +7,11 @@ library(ggplot2)
 #library(boot)
 #library(cowplot)
 
-source("R/4_Disturbance_model/function_analysis.R")
-source("R/4_Disturbance_model/fig_test.R")
+source("inst/4_Disturbance_model/function_analysis.R")
+source("inst/4_Disturbance_model/fig_test.R")
 
+# source("R/4_Disturbance_model/function_analysis.R")
+# source("R/4_Disturbance_model/fig_test.R")
 
 # load data
 load("data/full_data.RData")
@@ -36,7 +38,13 @@ burn <- c("b")
 full_data <- full_data %>%
     filter(sp_code %in% Mysp, dom_bio %in% c(4, 5))
 
+<<<<<<< HEAD
 Model_path <- "output/heavy/output_new_withoutBA/" # impossible to upload on github for now because to big
+=======
+
+Model_path <- "output/heavy/output_new_withoutBA/" # impossible to upload on github for now because too big
+Model_path <- "compute_canada/2024-03-01-test/output/"
+>>>>>>> 18a3790 (new continuous-time model file)
 for (sp in Mysp) {
     assign(paste0("Model_", sp), readRDS(paste0(Model_path, sp, ".rds")))
 }
@@ -46,8 +54,12 @@ for (sp in Mysp) {
 disturbance_pa <- disturbance_table("pa", FALSE)
 disturbance_nb <- disturbance_table("nb", FALSE)
 
-path1 <- "Figure/mh/no_submodel"
-path2 <- "Figure/mh/with_submodel"
+path1 <- "Figure/mh2/no_submodel"
+path2 <- "Figure/mh2/with_submodel"
+
+dir.create(path1, recursive = TRUE)
+dir.create(path2, recursive = TRUE)
+
 
 png(paste0(path1,"/multi_pred_pa.png"), width = 11, height = 8, res = 300, units = "in")
 disturbance_plot(disturbance_pa, 3)
