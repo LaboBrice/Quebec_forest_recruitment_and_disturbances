@@ -1,3 +1,7 @@
+#' Generate figures 
+#' 
+#' @param path path of the directory including the results (rds files).
+
 fig_effect <- function(path = "compute_canada/2024-07-02-ageclasses2/res") {
     # read files
     v_fl <- list.files(path, pattern = "\\.rds$", full.names = TRUE)
