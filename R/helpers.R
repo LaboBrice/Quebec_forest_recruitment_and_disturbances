@@ -2,6 +2,7 @@
 #'
 #' @export
 #' @importFrom utils globalVariables
+#' @import ggplot2
 #'
 list_species <- function() {
     c(

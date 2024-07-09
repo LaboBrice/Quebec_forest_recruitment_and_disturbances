@@ -12,7 +12,7 @@ We examined the impact of disturbances on saplings (diameters [1;3] cm) recruitm
 
 *Results:*
 
-We found a significant range shifts for temperate species. Recruitment was primarily influenced by the presence of conspecific adults. Disturbances had diverse effects, generally benefiting Acer rubrum (red maple), a generalist and opportunistic temperate species. While clearcut and fire had a positive mid-term (10-50 years) impact on pioneer species, partial cut favored temperate species recruitment to a greater extent.
+We found a significant range shifts for temperate species. Recruitment was primarily influenced by the presence of conspecific adults. Disturbances had diverse effects, generally benefiting *Acer rubrum* (red maple), a generalist and opportunistic temperate species. While clearcut and fire had a positive mid-term (10-50 years) impact on pioneer species, partial cut favohttps://www.howqueryengineswork.com/00-acknowledgments.htmlured temperate species recruitment to a greater extent.
 
 *Conclusion:*
 
@@ -72,6 +72,9 @@ run_jags_model("ACERUB", "model_time_class2_without_ba.bugs",
 ```
 
 
+### Figures
+
+New figures are generated using the code in `R/post_analysis.R`.
 
 
 
@@ -93,7 +96,7 @@ It is not necessary to run all the code to make the data, you can just use the o
 
 #### Code in data
 
-Table correspondance soil caracteristics/number :
+Table correspondence soil characteristics/number :
 
 |Code | Soil caracteristics |
 |-----|----------|

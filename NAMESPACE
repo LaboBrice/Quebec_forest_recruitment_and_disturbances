@@ -3,4 +3,5 @@
 export(list_species)
 export(run_analyses)
 export(run_jags_model)
+import(ggplot2)
 importFrom(utils,globalVariables)
